@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: PersistentVolume
 metadata:
-  name: image-pv1
+  name: image-pv
 spec:
   storageClassName: volume
   accessModes:
@@ -9,4 +9,4 @@ spec:
   capacity:
     storage: 5Gi
   hostPath:
-    path: /data/image-pv1/
+    path: /data/image-pv/
