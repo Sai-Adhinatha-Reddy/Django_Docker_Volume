@@ -9,4 +9,4 @@ spec:
   capacity:
     storage: 5Gi
   hostPath:
-    path: /data/image-pv/
+    path: /data/image-pv1/
