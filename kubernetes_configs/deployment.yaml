@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: image-upload-deployment
+  name: image-upload-deployment1
 spec:
   replicas: 2
   selector:
