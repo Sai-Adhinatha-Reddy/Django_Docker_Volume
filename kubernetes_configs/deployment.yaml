@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: image-upload-deployment1
+  name: image-upload-deployment
 spec:
   replicas: 2
   selector:
@@ -23,4 +23,4 @@ spec:
       volumes:
       - name: image-upload
         persistentVolumeClaim:
-          claimName: image-pvc1
+          claimName: image-pvc
