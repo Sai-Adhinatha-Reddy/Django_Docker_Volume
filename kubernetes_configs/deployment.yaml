@@ -23,4 +23,4 @@ spec:
       volumes:
       - name: image-upload
         persistentVolumeClaim:
-          claimName: dynamic-volume
+          claimName: image-pvc
