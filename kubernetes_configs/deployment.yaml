@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: image-upload-container
-        image: ckr123/django-image-upload  # Replace with the actual image name
+        image: gsaiadhinathareddy/django_image_upload:v3  # Replace with the actual image name
         ports:
         - containerPort: 8000
         volumeMounts:
