@@ -1,26 +1,26 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: python-volume-deployment
+  name: image-upload-deployment
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: python-volume-example
+      app: image-upload
   template:
     metadata:
       labels:
-        app: python-volume-example
+        app: image-upload
     spec:
       containers:
-      - name: python-volume-example
+      - name: image-upload-container
         image: ckr123/django-image-upload  # Replace with the actual image name
         ports:
         - containerPort: 8000
         volumeMounts:
-        - name: data-volume
+        - name: image-upload
           mountPath: /app/uploads  # Update with the correct mount path in the container
       volumes:
-      - name: data-volume
+      - name: image-upload
         persistentVolumeClaim:
           claimName: dynamic-volume
