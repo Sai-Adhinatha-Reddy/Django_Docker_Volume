@@ -4,7 +4,7 @@ metadata:
   name: image-upload-service
 spec:
   selector:
-    app: python-volume-example
+    app: image-upload
   ports:
     - protocol: TCP
       port: 80
